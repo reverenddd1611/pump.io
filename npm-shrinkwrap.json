@@ -1007,7 +1007,7 @@
     },
     "bitcore-message": {
       "version": "git+ssh://git@github.com/comakery/bitcore-message.git#8799cc327029c3d34fc725f05b2cf981363f6ebf",
-      "from": "bitcore-message@github:comakery/bitcore-message#dist",
+      "from": "github:comakery/bitcore-message#dist",
       "requires": {
         "bitcore-lib": "^0.13.7"
       }
@@ -4123,7 +4123,7 @@
       "integrity": "sha1-ST3135zTqfGxyylrvT0IFnnyDKg=",
       "requires": {
         "async": "^1.5.2",
-        "bitcore-message": "bitcore-message@github:comakery/bitcore-message#dist",
+        "bitcore-message": "github:comakery/bitcore-message#dist",
         "commander": "~2.9.0",
         "es6-promise": "~4.0.5",
         "jsonld": "0.4.3",
@@ -4402,7 +4402,8 @@
     "minimist": {
       "version": "1.2.5",
       "resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.5.tgz",
-      "integrity": "sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw=="
+      "integrity": "sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==",
+      "dev": true
     },
     "minimum-tls-version": {
       "version": "0.0.1",
@@ -4435,12 +4436,9 @@
       }
     },
     "mkdirp": {
-      "version": "0.5.5",
-      "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.5.tgz",
-      "integrity": "sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==",
-      "requires": {
-        "minimist": "^1.2.5"
-      }
+      "version": "1.0.4",
+      "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz",
+      "integrity": "sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw=="
     },
     "module-not-found-error": {
       "version": "1.0.1",
@@ -4504,6 +4502,21 @@
         "rimraf": "~2.4.0"
       },
       "dependencies": {
+        "minimist": {
+          "version": "1.2.8",
+          "resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz",
+          "integrity": "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==",
+          "optional": true
+        },
+        "mkdirp": {
+          "version": "0.5.6",
+          "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz",
+          "integrity": "sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==",
+          "optional": true,
+          "requires": {
+            "minimist": "^1.2.6"
+          }
+        },
         "rimraf": {
           "version": "2.4.5",
           "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-2.4.5.tgz",
@@ -6921,6 +6934,21 @@
           "integrity": "sha1-trvgsGdLnXGXCMo43owjfLUmw9E=",
           "dev": true
         },
+        "minimist": {
+          "version": "1.2.8",
+          "resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz",
+          "integrity": "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==",
+          "dev": true
+        },
+        "mkdirp": {
+          "version": "0.5.6",
+          "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz",
+          "integrity": "sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==",
+          "dev": true,
+          "requires": {
+            "minimist": "^1.2.6"
+          }
+        },
         "ncp": {
           "version": "0.4.2",
           "resolved": "https://registry.npmjs.org/ncp/-/ncp-0.4.2.tgz",
@@ -7476,9 +7504,9 @@
       "integrity": "sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw=="
     },
     "xml2js": {
-      "version": "0.4.23",
-      "resolved": "https://registry.npmjs.org/xml2js/-/xml2js-0.4.23.tgz",
-      "integrity": "sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==",
+      "version": "0.5.0",
+      "resolved": "https://registry.npmjs.org/xml2js/-/xml2js-0.5.0.tgz",
+      "integrity": "sha512-drPFnkQJik/O+uPKpqSgr22mpuFHqKdbS835iAQrUC73L2F5WkboIRd63ai/2Yg6I1jzifPFKH2NTK+cfglkIA==",
       "dev": true,
       "requires": {
         "sax": ">=0.6.0",
